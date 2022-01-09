@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  background-image: url(images/winbg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.taskbar {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color:#eeeeee;
+  z-index: 255;
+}
+.task-icons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.task-icons img{
+    height: 30px;
+    width: 30px;
+}
+.task-icons a {
+    margin: 5px 5px 0px 5px;
+    padding: 2px 5px 0px 5px;
+}
+.task-left img{
+    position: absolute;
+    height: 41px;
+    right: 0;
+
+
+}
+/* this is the start menu */
+.container{
+    position: absolute;
+    height: 85vh;
+    width: 52vw;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    bottom: -535px;
+    left: 453px;
+    transition: all 0.4s ease-in;
+    
+}
+.container h3{
+    padding: 10px;
+    margin: 10px 20px;
+    font-weight:400;
+}
+.cont-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.cont-items a{
+    cursor: default;
+    
+}
+ .items:hover{
+    cursor: default;
+    border: 1px solid white;
+    box-shadow: white;
+    border-radius: 8px;
+}
+.cont-items img{
+    width: 35px;
+}
+.cont-items .items{
+    margin: 5px 29px;
+    margin-bottom: 20px;
+    
+}
+.items {
+    width: 70px;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    transition: all 0.2s ease-in;
+}
+.items p {
+    font-size: 10px;
+}
